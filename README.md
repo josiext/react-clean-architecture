@@ -28,13 +28,15 @@ This is an example of a React App using Domain Driven Design (DDD) with Clean Ac
                 - textInput
                     - index.tsx
                     - textInput.types.ts
-            - commons
+            - libs
                 - date
                     - index.ts
                     - Date.types.ts
+                    - Dates.test.ts
                 - string
                     - index.ts
                     - String.types.ts
+                    - String.test.ts
         - repositories
             - Todo
                 index.ts
