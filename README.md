@@ -40,7 +40,7 @@ This is an example of a React App using Domain Driven Design (DDD) with Clean Ac
         - repositories
             - Todo
                 index.ts
-        - store
+        - states
             - index
 ```
 
