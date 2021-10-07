@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { ITodo } from "entities/todo";
 import * as TodoUseCases from "application/todo";
 
+import styles from "./Home.module.css";
+
 export default function Home() {
   const [todoList, setTodoList] = useState<ITodo[]>([]);
   const [todoForm, setTodoForm] = useState<{ description: string } | null>(
@@ -46,8 +48,11 @@ export default function Home() {
   };
 
   return (
-    <main className="App">
-      <h1>ToDo</h1>
+    <main className={styles.Home}>
+      <header className={styles.header}>
+        <h1 className={styles.header_title}>ToDo</h1>
+      </header>
+
       <form onSubmit={handleCreateTodo}>
         <label>
           Description
@@ -59,7 +64,7 @@ export default function Home() {
         <button>Create</button>
       </form>
 
-      <div>
+      <section>
         {todoList.map((todo) => (
           <div
             style={{ display: "flex", justifyContent: "center" }}
@@ -76,7 +81,7 @@ export default function Home() {
             <button onClick={() => handleRemove(todo)}>×</button>
           </div>
         ))}
-      </div>
+      </section>
     </main>
   );
 }
