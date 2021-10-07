@@ -24,7 +24,7 @@ This is an example of a React App using Domain Driven Design (DDD) with Clean Ac
                     - Todo.logic.ts
                     - Todo.types.ts
                     - Todo.module.css
-            - ui
+            - components
                 - textInput
                     - index.tsx
                     - textInput.types.ts
@@ -41,7 +41,7 @@ This is an example of a React App using Domain Driven Design (DDD) with Clean Ac
             - Todo
                 index.ts
         - states
-            - index
+            - index.ts
 ```
 
 ## Start
